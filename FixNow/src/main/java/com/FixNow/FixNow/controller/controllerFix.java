@@ -44,4 +44,5 @@ public String modificar(@RequestBody java.util.map<modeloincidencia>,String body
 public String agregar(@RequestBody modeloincidencia inc) {
     service.agregarincidencia(inc);
     return "Incidencia agregada correctamente";
+    }
 }
