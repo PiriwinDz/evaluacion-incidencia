@@ -21,7 +21,7 @@ public class serviceFix {
         repository.modificarincidencia(antid, newid);
    }
 
-   
-   
-
+   public void agregarincidencia(modeloincidencia inc) {
+        repository.agregarincidencia(inc);
+   }
 }

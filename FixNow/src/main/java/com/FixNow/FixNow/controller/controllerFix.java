@@ -41,6 +41,7 @@ public String modificar(@RequestBody java.util.map<modeloincidencia>,String body
     service.modificar(antid,newid);
     }
 @PostMapping("/agregar")
-public String agregar(@RequestBody java.util.map<modeloincidencia>,String body){
-int id = body.get(id);
+public String agregar(@RequestBody modeloincidencia inc) {
+    service.agregarincidencia(inc);
+    return "Incidencia agregada correctamente";
 }

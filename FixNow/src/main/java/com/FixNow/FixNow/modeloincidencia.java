@@ -109,10 +109,21 @@ public class modeloincidencia {
 
 
 
-    public static void add(List<modeloincidencia> incidencia) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'add'");
+    @Override
+    public String toString() {
+        return "modeloincidencia{id=" + id + ", descripcion='" + descripcion + "', estado='" + estado + "', prioridad=" + prioridad + ", fecha='" + fecha + "'}";
     }
 
-    
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        modeloincidencia that = (modeloincidencia) o;
+        return id == that.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return Integer.hashCode(id);
+    }
 }
